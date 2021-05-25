@@ -155,7 +155,12 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
             .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps, { '<img src="legend/rios_3.png" /> rios': layer_rios, '<img src="legend/cerros_2.png" /> cerros': layer_cerros, "OSM Standard": layer_OSMStandard_0, }, { collapsed: false }).addTo(map);
+        L.control.layers(baseMaps, {
+            '<img src="legend/rios_3.png" /> rios': layer_rios,
+            '<img src="legend/cerros_2.png" /> cerros': layer_cerros,
+            '<img src="legend/municipios_1.png" /> municipios': layer_municipios,
+        },
+            { collapsed: false }).addTo(map);
         setBounds();
     </script>
 </body>
